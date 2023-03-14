@@ -21,6 +21,7 @@
     --button-more-press: #5496BD;
     --special-border: #E5E5E5;
     --special-toggle: #ababab;
+    --radiospecial: #6A6A6A;
   }
   
   /* Global */
@@ -97,7 +98,7 @@
     max-width: 200px;
   }
   .site-navigation li:nth-child(2) {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .site-navigation li:nth-child(3) {
     margin-left: 350px;
@@ -290,7 +291,7 @@
     margin-top: 8px;
   }
   .calendar:focus path,
-  .calendar:hover path{
+  .calendar:hover path {
     fill: var(--basic-black);
   }
   .calendar:active path {
@@ -346,12 +347,12 @@
     border: none;
   }
   .button-minus1 {
-    margin-top: 6px;
-    margin-left: 45px;
+    margin-top: 7px;
+    margin-left: 48px;
   }
   .button-minus2 {
-    margin-top: 6px;
-    margin-left: 36px;
+    margin-top: 7px;
+    margin-left: 42px;
   }
   .button-plus1 {
     margin-top: 10px;
@@ -493,11 +494,8 @@
   
   /*CATALOG/ /*CATALOG/ /*CATALOG/ /*CATALOG/ /*CATALOG*/ 
   
-  /*site-navigation*/
-   
-  
+  /*breadcrumbs*/
   .page-title {
-    
     background-image: url(../img/background.jpg);
     height: 217px;
     width: 1200px;
@@ -505,10 +503,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     margin: 15px auto;
-   
-    
   }
-  
   .breadcrumbs {
     display: inline-block;
     box-sizing: border-box;
@@ -520,7 +515,6 @@
     background-repeat: repeat;
     margin-top: 26px;
   }
-  
   .breadcrumbs:nth-child(1) {
     position: relative;
     left: -200px;
@@ -533,7 +527,6 @@
     position: relative;
     left: 200px;
   }
-  
   .header-bold {
     font-size: 16px;
     font-weight: bold;
@@ -552,6 +545,7 @@
     margin-bottom: 21px;
     line-height: 25px;
     color: var(--basic-white);
+   
   }
   .filter-label:last-of-type {
     margin-bottom: 20px;
@@ -574,22 +568,17 @@
   .filter-label::before {
     background-image: url(../img/checkbox-off.svg);
   }
-  .inrfastructure-filter input:checked + .filter-label::after,
-  .housing-filter input:checked + .filter-label::after {
+  input:checked + .filter-label::after,
+  input:checked + .filter-label::after {
     display: block;
   }
-  .inrfastructure-filter input:checked + .filter-label::before,
-  .housing-filter input:checked + .filter-label::before {
+  input:checked + .filter-label::before,
+  input:checked + .filter-label::before {
     display: none;
   }
-  .inrfastructure-filter input:disabled + .filter-label::before,
-  .housing-filter input:disabled + .filter-label::before {
-    display: block;
-    background-image: url(../img/icons/checkbox-disabled.svg);
-  }
-  .inrfastructure-filter input:focus + label,
-  .housing-filter input:focus + label {
-    outline: auto;
+   input:focus + label,
+   input:focus + label {
+    outline: none;
   }
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
@@ -600,12 +589,16 @@
     clip-path: inset(100%);
     overflow: hidden;
     border: none;
-    white-space: nowrap;
+    white-space: nowrap;  
   }
-  
-  
-  
-  /*site-navigation - cтиль ползунка*/
+  .visually-hidden:focus path, /*доработать*/
+  .visually-hidden:hover path { 
+    fill: var(--radiospecial);
+  }
+  .visually-hidden:active path {
+    fill: var(--radiospecial);
+  }
+  /*breadcrumbs - cтиль ползунка*/
   .price-controls {
     border: solid var(--basic-white) 2px;
     border-radius: 2px;
@@ -644,7 +637,6 @@
     margin-top: -3px;
     height: 2px;
     background: var(--basic-white);
-   
   }
   .range-controls .bar {
     position: absolute;
@@ -672,7 +664,6 @@
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0px 2px 1px var(--special-toggle);
-    
   }
   .range-controls .toggle:focus,
   .range-controls .toggle:hover {
@@ -702,13 +693,6 @@
     border: none;
   }
  
-
-
-
-
-
-
-
   /*Sorting*/
   .search-catalog {
     display: grid;
@@ -817,20 +801,13 @@
     margin-left: 40px;
   }
   .filter-rating {
-     
-    
     width: 110px;
     margin-left: 530px;
-    
-  
   }
   .filter-rating-star {
     display: flex;
     justify-content: flex-end;
   }
-  
-  
-  
   .filter-rating-hotel {
     width: 110px;
     height: 24px;
