@@ -1,0 +1,14 @@
+ 
+  html,
+  body {
+    margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  body {
+    min-width: 430px;
+    border: 2px dashed #c7e4ff;
+  }
+ 
