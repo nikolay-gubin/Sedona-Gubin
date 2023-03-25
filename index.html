@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!--href="css/style.min.css"-->
   </head>
   <body class="page-body">
     <div class="shadow">
@@ -38,22 +38,24 @@
       </header>
       <main class="container">
         <section class="container-welcome">
+          <h2 class="visually-hidden">Заглавная тема Седоны</h2>
           <figure class="conteiner-image">
             <img class="welcome-logo" src="img/Shape.png" width="187" height="44" alt="Welcome"> <br>
-            <img src="img/Shape2.png" width="255" height="28" alt="to the gorgeous">
+            <img class="welcome-logo-mean" src="img/Shape2.png" width="255" height="28" alt="to the gorgeous">
             <img class="welcome-logo-big" src="img/Shape3.png" width="456" height="213" alt="Sedona Because the Grang Canyon sucks">
           </figure>
         </section>
         <section class="center-text">
-          <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h2>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,<br>заслуживающий большего!</h2>
+          <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
         </section>
         <section class="features">
-          <ul class="features-list">
+          <h2 class="visually-hidden">Преимущества №1</h2>
+          <ul class="features-list"> 
             <li class="feature-item">
               <h3>Настоящий<br>городок</h3>
               <p> — №1 — </p>
-              <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+              <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там<br>течёт своя жизнь</p>
             </li>
             <li class="feature-foto">  
               <img src="img/image1.jpg" width="800" height="256" alt="Настоящий городок Седона">
@@ -61,6 +63,7 @@
           </ul> 
         </section>
         <section>
+          <h2 class="visually-hidden">Преимущества №1.2</h2>
           <ul class="features-clause">
             <li class="feature-point">
               <svg width="75" height="72" viewBox="0 0 75 72" fill="none">
@@ -69,7 +72,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.656 34.7929C33.376 34.7929 29.906 31.3409 29.906 27.0799C29.906 22.8209 33.375 19.3669 37.656 19.3669C41.935 19.3669 45.406 22.8209 45.406 27.0799C45.406 31.3409 41.935 34.7929 37.656 34.7929ZM42.625 27.0799C42.625 24.3489 40.4 22.1349 37.656 22.1349C34.911 22.1349 32.686 24.3489 32.686 27.0799C32.686 29.8119 34.91 32.0279 37.656 32.0279C40.4 32.0279 42.625 29.8119 42.625 27.0799ZM17.061 41.2099H20.061V45.1289H17.061V41.2099ZM25.999 41.2099H22.999V45.1289H25.999V41.2099ZM17.061 47.1819H20.061V51.1009H17.061V47.1819ZM25.999 47.1819H22.999V51.1009H25.999V47.1819ZM48.998 41.2099H51.998V45.1289H48.998V41.2099ZM57.936 41.2099H54.936V45.1289H57.936V41.2099ZM48.998 47.1819H51.998V51.1009H48.998V47.1819ZM57.936 47.1819H54.936V51.1009H57.936V47.1819Z" fill="#81B3D2"/>
                 </svg>
               <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+              <p>Рекомендуем пожить в&nbsp;настоящем<br>мотеле, всё как в&nbsp;кино!</p>
             </li>
             <li class="feature-point">
               <svg width="75" height="70" viewBox="0 0 75 70" fill="none">
@@ -81,16 +84,17 @@
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
-            <li class="feature-point">
+            <li class="feature-point3">
               <svg width="64" height="77" viewBox="0 0 64 77" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 23.501H36.312C50.125 16.602 51.229 12.25 50.72 9.816C49.558 5.853 45.028 2.793 40.718 4.409C35.149 6.498 33.581 14.797 32.074 20.796C30.15 14.726 28.29 6.982 23.938 3.059C22.677 1.921 20.843 0.794999 18.175 1.031C14.149 1.387 8.373 6.413 10.717 12.012C12.968 17.39 20.404 20.789 25.295 23.501H2.879C1.29355 23.5026 0.00715075 24.7846 0 26.37V37.692C0.00715075 39.2774 1.29355 40.5594 2.879 40.561H3.153V77H60.994V40.561H61.097C62.6828 40.5599 63.9698 39.2778 63.977 37.692V26.37C63.9698 24.7842 62.6828 23.5021 61.097 23.501ZM42.413 6.944C44.516 6.634 47.395 8.243 47.668 10.153C48.061 12.909 44.268 15.408 42.582 16.574C40.059 18.318 37.654 19.217 35.295 20.629C36.179 16.939 37.844 7.618 42.413 6.944ZM19.531 16.912C17.306 15.427 12.987 12.481 13.091 9.141C13.203 5.546 18.834 2.571 21.905 5.255C25.761 8.626 27.618 16.36 29.024 21.812C25.775 20.273 22.696 19.024 19.531 16.912ZM25.503 74.026H6.136V40.561H25.504V74.026H25.503ZM25.503 37.524H3.046V26.538H25.503V37.524ZM35.66 37.524V74.027H28.486V26.538H35.66V37.524ZM58.011 74.026H38.644V40.561H58.011V74.026ZM60.931 37.524H38.644V26.538H60.931V37.524Z" fill="#81B3D2"/>
                 </svg>              
               <h3>Сувениры</h3>
-              <p>Не только китайского но и местного<br>производства!</p> 
+              <p>Не&nbsp;только китайского но&nbsp;и&nbsp;местного<br>производства!</p> 
             </li>
           </ul>  
         </section>
-        <section class="features">
+        <section class="features2">
+          <h2 class="visually-hidden">Преимущества №2</h2>
           <ul class="features-list">
             <li class="feature-foto">  
               <img src="img/image2.jpg" width="800" height="256" alt="Настоящий городок Седона">
@@ -98,11 +102,12 @@
             <li class="feature-item">
               <h3>Там есть<br>мост дьявола</h3>
               <p> — №2 — </p>
-              <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+              <p>Да, по&nbsp;нему можно пройти! Если конечно<br>вы осмелитесь</p>
             </li>
           </ul> 
         </section>   
         <section>
+          <h2 class="visually-hidden">Преимущества №3,4,5</h2>
           <ul class="features-clause-bottom">
             <li class="features-clause-list">
               <h3>Небольшая<br>площадь</h3>
@@ -112,74 +117,78 @@
             <li class="features-clause-list">
               <h3>Красивая<br>дорога</h3>
               <p>— №4 —</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+              <p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем<br>не скучно!</p>
             </li> 
             <li class="features-clause-list"> 
               <h3>Мало<br>туристов</h3>
               <p> — №5 — </p>
-              <p>Большинство едет в Гранд Каньен<br>и толпится там</p>
+              <p>Большинство едет в&nbsp;Гранд Каньен<br>и толпится там</p>
             </li>
           </ul> 
         </section>
         <section class="appointment">
           <h2>Заинтересовались?</h2>
-          <p class="appointment-info"> Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-            <button class="search-hotels" type="submit">Поиск гостиницы в седоне</button> 
-              <div class="search-window">
-                <form class="appointment-form" action="#" method="post">
-                  <p class="appointment-item">
-                    <label for="appointment-item">Дата заезда:</label>
-                    <input id="appointment-item" type="text" name="check-in" value="24 Апреля 2017">
-                    <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
-                    </svg></a>
+          <p class="appointment-info"> Укажите предполагаемые даты поездки<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+            <button class="search-hotels" type="submit">Поиск гостиницы в&nbsp;седоне</button> 
+            <div class="search-window">
+              <form class="appointment-form" action="#" method="post">
+                <p class="appointment-item">
+                  <label for="appointment-item">Дата заезда:</label>
+                  <input id="appointment-item" type="text" name="check-in" value="24 Апреля 2017">
+                  <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
+                  </svg></a>
+                </p>
+                <p class="appointment-item"> 
+                  <label for="appointment-item">Дата выезда:</label>
+                  <input type="text" name="departure" value="4 июля 2017">
+                  <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
+                  </svg></a>
+                </p>
+                <p class="appointment-piople">
+                  <label for="grown" class="appointment-piople1">Взрослые:</label>
+                    <button class="button-minus button-minus1" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
+                    <rect width="12" height="3" fill="#A9A9A9"/>
+                    </svg></button>
+                    <input type="text" name="grown" id="grown" value="2">
+                    <button class="button-plus button-plus1" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                    </svg>
+                    </button>
+                  <label class="appointment-piople2">Дети:</label> <!--for="children" ошибка в валидаторе...!?-->
+                    <button class="button-minus button-minus2" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
+                    <rect width="12" height="3" fill="#A9A9A9"/>
+                    </svg></button>
+                    <input id="appointment-piople" type="text" name="children" value="0">
+                    <button class="button-plus button-plus2" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                    </svg></button>
                   </p>
-                  <p class="appointment-item"> 
-                    <label for="appointment-item">Дата выезда:</label>
-                    <input type="text" name="departure" value="4 июля 2017">
-                    <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
-                    </svg></a>
-                  </p>
-                  <p class="appointment-piople">
-                    <label for="grown" class="appointment-piople1">Взрослые:</label>
-                      <button class="button-minus button-minus1" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
-                      <rect width="12" height="3" fill="#A9A9A9"/>
-                      </svg></button>
-                      <input type="text" name="grown" id="grown" value="2">
-                      <button class="button-plus button-plus1" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-                      </svg>
-                      </button>
-                    <label class="appointment-piople2">Дети:</label> <!--for="children" ошибка в валидаторе...!?-->
-                      <button class="button-minus button-minus2" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
-                      <rect width="12" height="3" fill="#A9A9A9"/>
-                      </svg></button>
-                      <input id="appointment-piople" type="text" name="children" value="0">
-                      <button class="button-plus button-plus2" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-                      </svg></button>
-                    </p>
-                    <button class="button-search" type="submit" name="search">Найти</button> 
-                </form>
-              </div>
+                  <button class="button-search" type="submit" name="search">Найти</button> 
+              </form>
+            </div>
         </section>
         <section class="modal modal-map">
-        <!--Подключить работающую map пока картинка-->
-        <p><a href="#"><img src="img/map.jpg" width="1199" height="594" alt="Карта"></a></p>
+          <h2 class="visually-hidden">Как до&nbsp;нас добраться</h2>
+        <!--Подключить работающую map пока картинка
+        <a href="#"><img src="img/map.jpg" width="1199" height="594" alt="Карта"></a>-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497068.8930145386!2d-111.9169339640038!3d35.06934520802002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1679220358193!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </main>  
       <footer class="page-footer main-footer">
         <div class="container">
           <section class="footer-contacts">
+            <h2 class="visually-hidden">Visitsedona</h2>
             <a href="#">#Visitsedona</a>
             <p>
               <a class="contacts-phone" href="tel:88005558682">+7 800 555-86-28</a>
             </p>
           </section>
           <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
               <li><a class="social-button twitter" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none">
                 <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
@@ -198,6 +207,7 @@
             </ul>
           </section> 
           <section class="footer-copyright"> 
+            <h2 class="visually-hidden">HTML Academy</h2>
             <p>Website by</p>
             <p><a class="logo-button" href="https://htmlacademy.ru"><svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_53374_390)">
