@@ -7,7 +7,7 @@
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700subset=latin,cyrillic;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css"> <!--href="css/style.min.css"-->
   </head>
@@ -122,19 +122,20 @@
             <li class="features-clause-list"> 
               <h3>Мало<br>туристов</h3>
               <p> — №5 — </p>
-              <p>Большинство едет в&nbsp;Гранд Каньен<br>и толпится там</p>
+              <p>Большинство едет в&nbsp;Гранд Каньон<br>и толпится там</p>
             </li>
           </ul> 
         </section>
         <section class="appointment">
           <h2>Заинтересовались?</h2>
           <p class="appointment-info"> Укажите предполагаемые даты поездки<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-            <button class="search-hotels" type="submit">Поиск гостиницы в&nbsp;седоне</button> 
-            <div class="search-window">
-              <form class="appointment-form" action="#" method="post">
+            
+              <button class="search-hotels" type="button">Поиск гостиницы в&nbsp;седоне</button> 
+             
+              <form class="modal-search modal" action="#" method="post">
                 <p class="appointment-item">
                   <label for="appointment-item">Дата заезда:</label>
-                  <input id="appointment-item" type="text" name="check-in" value="24 Апреля 2017">
+                  <input id="appointment-item" type="text" name="check-in" value="" placeholder="24 апреля 2017">
                   <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
@@ -142,7 +143,7 @@
                 </p>
                 <p class="appointment-item"> 
                   <label for="appointment-item">Дата выезда:</label>
-                  <input type="text" name="departure" value="4 июля 2017">
+                  <input id="appointment-item" type="text" name="departure" value="" placeholder="4 июля 2017">
                   <a class="calendar"><svg width="21" height="23" viewBox="0 0 21 23" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
@@ -153,7 +154,7 @@
                     <button class="button-minus button-minus1" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
                     <rect width="12" height="3" fill="#A9A9A9"/>
                     </svg></button>
-                    <input type="text" name="grown" id="grown" value="2">
+                    <input type="text" name="grown" id="grown" value="" placeholder="2">
                     <button class="button-plus button-plus1" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                     </svg>
@@ -162,19 +163,17 @@
                     <button class="button-minus button-minus2" type="submit" name="button-minus"><svg width="12" height="3" viewBox="0 0 12 3" fill="none">
                     <rect width="12" height="3" fill="#A9A9A9"/>
                     </svg></button>
-                    <input id="appointment-piople" type="text" name="children" value="0">
+                    <input id="appointment-piople" type="text" name="children" value="" placeholder="0">
                     <button class="button-plus button-plus2" type="submit" name="button-plus"><svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                     </svg></button>
                   </p>
+                  <p class="modal_error">Пожалуйста, заполните все поля!</p>
                   <button class="button-search" type="submit" name="search">Найти</button> 
               </form>
-            </div>
         </section>
-        <section class="modal modal-map">
+        <section class="modal-map">
           <h2 class="visually-hidden">Как до&nbsp;нас добраться</h2>
-        <!--Подключить работающую map пока картинка
-        <a href="#"><img src="img/map.jpg" width="1199" height="594" alt="Карта"></a>-->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497068.8930145386!2d-111.9169339640038!3d35.06934520802002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1679220358193!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </main>  
@@ -235,5 +234,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
