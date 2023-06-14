@@ -1,5 +1,6 @@
  /* Variables */
  :root {
+  
   /*Index*/ 
     --basic-white: #ffffff;
     --basic-black: #000000;
@@ -12,7 +13,7 @@
     --special-light: #81B3D2;
     --special-botton: #A9A9A9;
     --logohtml:#BDBBBC;
-    
+
   /*Catalog*/
     --catalog-name-peace: #766357;
     --button-reservation-move: #604E43;
@@ -23,10 +24,10 @@
     --special-toggle: #ababab;
     --radiospecial: #6A6A6A;
   }
-  
+
   /* Global */
   .page-body {
-    min-width: 1200px;
+    max-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -37,6 +38,10 @@
     text-transform: uppercase;
     color: var(--basic-black);  
     background: var(--basic-neutral);
+    margin: 0 auto;
+    padding: 0 auto;
+    -webkit-box-shadow: 0px 5px 15px 0px rgb(0, 1, 1, 0.2);
+            box-shadow: 0px 5px 15px 0px rgb(0, 1, 1, 0.2);
   }
   a {
     text-decoration: none;
@@ -48,22 +53,16 @@
   .page {
     height: 100%;
   }
-  .shadow {
-    background: var(--basic-white);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    -webkit-box-shadow: 0px 5px 15px 0px rgb(0, 1, 1, 0.2);
-            box-shadow: 0px 5px 15px 0px rgb(0, 1, 1, 0.2);
-  }
   .main-navigation {
     padding-top: 16px;
+    padding-bottom: 16px;
     z-index: 2;
     background-color: transparent;
+    background: var(--basic-white);
   }
   .main-header {
     position: relative;
-    /*height: 68px; наложение*/
+    background: var(--basic-white);
   }
   .main-header-logo {
     position: absolute;
@@ -74,15 +73,16 @@
     left: -67px;
     margin-left: 50%;
   }
-  
+
   /* Container*/
   .container {
     text-align: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: -17px;
     padding: 0 auto;
+    background: var(--basic-white);
   }
-   
+
   /* Site Navigation */
   .site-navigation {
     margin: 0;
@@ -100,7 +100,6 @@
   }
   .site-navigation li {
     margin-left: 73px;
-    /*margin-right: 134px;*/
     max-width: 200px;
   }
   .site-navigation li:nth-child(2n) { /* n - В целях переполнения нижнего ряда*/
@@ -131,10 +130,10 @@
     color: var(--basic-black);
     opacity: 0.3;
   }
-  
+
   /* Container-welcome */
   .container-welcome {
-    height: 509px;
+    height: 512px;
     background-image: url(../img/Shape4.png), url(../img/backgroundphoto.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -152,7 +151,7 @@
     margin: 0 auto;
     margin-top: 48px;
   }
-  
+
   /*Center text*/
   .center-text {
     margin-top: 45px;
@@ -162,6 +161,7 @@
     margin-top: 43px;
     height: 62px;
   }
+
   /* Features */
   .features-list {
     display: -webkit-box;
@@ -235,7 +235,6 @@
     list-style: none;
     text-align: center;
     background-color: var(--basic-feature-list);
-    
   }
   .features-clause-list h3 {
     padding-top: 25px;
@@ -256,20 +255,27 @@
   .appointment h2{
     font-size: 30px;
     line-height: 24px;
-    padding-top: 30px;
-    padding-bottom: 8px;
+    padding: 30px 8px 8px 0px;
   }
   .appointment-info{
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 43px;
   }
-  
+  .appointment-popup {
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
   /*Поиск гостиницы в Седоне*/
   .search-hotels {
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     position: relative;
+    z-index: 1;
     width: 568px;
     height: 86px;
     margin: 0 auto;
@@ -281,7 +287,6 @@
     font-style: bold;
     vertical-align: middle;
     border: none;
-
   }
   .search-hotels:hover,
   .search-hotels:focus {
@@ -291,7 +296,6 @@
     background: var(--button-reservation-press);
     color: var(--catalog-name-peace);
   }
-
   .modal {
     position: relative;
     width: 570px;
@@ -299,63 +303,43 @@
     font-weight: 700;
     line-height: 26px;
   }
-
-  .modal-search { 
+  .modal-form { 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     display: none;
     position: absolute;
-    width: 513px;
-    height: 355px;
-    padding-top: 40px;
-    padding-left: 55px;
-    margin-left: 316px;
-    font-weight: 700;
+    width: 568px;
+    height: 395px;
     text-align: left;
     background-color: var(--basic-white);
     -webkit-box-shadow: 0px 7px 15px 0px rgb(0, 1, 1, 0.15);
             box-shadow: 0px 7px 15px 0px rgb(0, 1, 1, 0.15);
+ 
   }
-
   .modal-show {
     display: block;
- ;
   }
-  .modal_form-animation {
-    animation-name: bounce;
-    animation-duration: 0.6s;
+  .form-animation {
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
-
-  @-webkit-keyframes bounce {
-    0% {
-      -webkit-transform: translateY(-100px);
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-    }
-  }
-
   .modal_form-close {
     display: none;
+    -webkit-animation: bounce 2.6s;
+            animation: bounce 2.6s;
   }
-  .modal_error {
-    display: none;
-    position: absolute;
-    top: 235px;
-    left: 60px;
-    font-size: 10px;
+  .modal-error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
   }
-  .modal_error-show {
-    display: block;
-  }
- 
-  
   .calendar {
     position: absolute;
     width: 21px;
@@ -372,7 +356,7 @@
   }
   .appointment-item input {
     width: 346px;
-    height: 38px;
+    height: 38px;  
     margin-left: 20px;
     padding-left: 12px;
     text-align: left; 
@@ -383,7 +367,7 @@
             box-sizing: border-box;
     color: var(--basic-black);
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: inherit;
   }
   .appointment-item input[name="departure"] {
     margin-left: 17px;
@@ -396,8 +380,11 @@
     background: var(--basic-white);
     border-bottom: solid 2px var(--special-border);
   }
-  .appointment-piople .appointment-piople2 {
-    margin-left: 41px;
+  .appointment-item-checkin {
+    margin: 55px 0px 30px 58px;
+  }
+  .appointment-item-departure {
+    margin: 10px 0 30px 58px;
   }
   .appointment-piople input {
     width: 114px;
@@ -414,7 +401,16 @@
     text-transform: uppercase;
   }
   .appointment-piople input[name="children"] {
-    margin-left: 32px;
+    margin-left: 23px;
+  }
+  .appointment-piople {
+    margin-bottom: 70px;
+  }
+  .appointment-piople-grow {
+    margin: 0px 0px 0px 58px;
+  }
+  .appointment-piople-children {
+    margin: 0px 0 0 50px;
   }
   .button-minus,
   .button-plus {
@@ -427,7 +423,7 @@
   }
   .button-minus2 {
     margin-top: 7px;
-    margin-left: 42px;
+    margin-left: 35px;
   }
   .button-plus1 {
     margin-top: 10px;
@@ -438,7 +434,9 @@
     margin-left: -30px;
   }
   .button-minus:focus path,
-  .button-minus:hover path,
+  .button-minus:hover path {
+    fill: var(--basic-black);
+  }
   .button-plus:focus path,
   .button-plus:hover path {
     fill: var(--basic-black);
@@ -449,10 +447,11 @@
   }
   .button-search {
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: 458px;
     height: 58px;
-    margin-top: 40px;
+    left: 60px;
+    top: 280px;
     text-align: center;
     background: var(--special-light);
     color: var(--basic-white);
@@ -472,19 +471,20 @@
     background: var(--button-more-press);
     color: var(--special-light);
   }
-  
+
   /* Modal Map */
   iframe {
     width: 1200px;
     height: 594px;
     border: none;
   }
+
   /* Main footer */
   .main-footer {
     color: var(--basic-black);
     background-color: var(--basic-white);
     width: 1200px;
-    height: 120px;
+    height: 110px;
     margin-top: -125px;
     opacity: 90%;
   }
@@ -582,7 +582,7 @@
     opacity: 0.3;
   }
     
-  /*CATALOG/ /*CATALOG/ /*CATALOG/ /*CATALOG/ /*CATALOG*/ 
+  /*---------------------CATALOG---------------------*/ 
   
   /*breadcrumbs*/
   .page-title {
@@ -686,6 +686,7 @@
   .visually-hidden:active path {
     fill: var(--radiospecial);
   }
+
   /*breadcrumbs - cтиль ползунка*/
   .price-controls {
     border: solid var(--basic-white) 2px;
@@ -804,7 +805,6 @@
     margin-left: 75px;
     margin-top: 12px;
   }
- 
   .catalog-list {
     /*display: flex;
     flex-wrap: wrap;
@@ -888,7 +888,6 @@
   }
   
   /*Найденные отели*/
-  
   .filter-option {
     display: -ms-grid;
     display: grid;
@@ -969,7 +968,6 @@
   }
   
   /*Buttons reservation*/
-  
   .button-more {
     font: inherit;
     text-align: center;
@@ -1010,3 +1008,85 @@
     background: var(--button-reservation-press);
     color: var(--catalog-name-peace);
   }
+
+  /* Animations */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}

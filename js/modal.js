@@ -1,12 +1,10 @@
+
 const searchHotels = document.querySelector(".search-hotels");
-const modalSearch = document.querySelector(".modal-search");
-
-let nameDate = modalSearch.querySelector("[name=check-in]");
-let departureDate = modalSearch.querySelector("[name=departure]");
-let adultsCount = modalSearch.querySelector("[name=grown]");
-let childrenCount = modalSearch.querySelector("[name=children]");
-
-let errorMessage = modalSearch.querySelector(".modal_error");
+const modalForm = document.querySelector(".modal-form");
+const nameDate = modalForm.querySelector("[name=check-in]");
+const departureDate = modalForm.querySelector("[name=departure]");
+const grownCount = modalForm.querySelector("[name=grown]");
+const childrenCount = modalForm.querySelector("[name=children]");
 
 let isStorageSupport = true;
 let grownStorage = "";
@@ -18,48 +16,43 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
-
 searchHotels.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalSearch.classList.toggle("modal-show");
+  modalForm.classList.toggle("modal-show");
   nameDate.focus();
   if (grownStorage && childrenStorage) {
     grownCount.value = grownStorage;
     childrenCount.value = childrenStorage;
   }
-  if (errorMessage.classList.contains("modal_error-show")) {
-    errorMessage.classList.remove("modal_error-show");
+  if (errorMessage.classList.contains("modal-error")) {
+    errorMessage.classList.remove("modal-error");
   }
-  if (modalSearch.classList.contains("modal-show")) {
-    modalSearch.classList.add("modal_form-animation");
+  if (modalForm.classList.contains("modal-show")) {
+    modalForm.classList.add("form-animation");
   }
 });
-
-modalSearch.addEventListener("submit", function (evt) {
+ 
+// Выделение позиций
+modalForm.addEventListener("submit", function (evt) {
   if (!nameDate.value || !departureDate.value || !grownCount.value || !childrenCount.value) {
     evt.preventDefault();
-    errorMessage.classList.add("modal_error-show");
+    modalForm.classList.remove("modal-error");
+    modalForm.offsetWidth = modalForm.offsetWidth;
+    modalForm.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("grownCount", grownCount.value);
-      localStorage.setItem("childrenCount", childrenCount.value);
-      if (errorMessage.classList.contains("modal_error-show")) {
-        errorMessage.classList.remove("modal_error-show");
-      }
+      localStorage.setItem("login", nameDate.value, departureDate.value, grownCount.value);
     }
   }
-});
+}); 
 
+// Закрытие Esc 
 window.addEventListener("keydown", function (evt) {
-  if (evt.key === 'Esc' || evt.key === 'Escape') {
-    if (!modalSearch.classList.contains("modal_form-close")) {
+  if (evt.keyCode === 27) {
+    if (modalForm.classList.contains("modal-show")) {
       evt.preventDefault();
-      modalSearch.classList.add("modal_form-close");
-    }
-    if (errorMessage.classList.contains("modal_error-show")) {
-      evt.preventDefault();
-      errorMessage.classList.remove("modal_error-show");
+      modalForm.classList.remove("modal-show");
+      modalForm.classList.remove("modal-error");
     }
   }
 });
-
