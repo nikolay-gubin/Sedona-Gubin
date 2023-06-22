@@ -34,7 +34,7 @@ searchHotels.addEventListener("click", function (evt) {
  
 // Выделение позиций
 modalForm.addEventListener("submit", function (evt) {
-  if (!nameDate.value || !departureDate.value || !grownCount.value || !childrenCount.value) {
+  if (!nameDate.value || !departureDate.value || !grownCount.value) {
     evt.preventDefault();
     modalForm.classList.remove("modal-error");
     modalForm.offsetWidth = modalForm.offsetWidth;
@@ -52,7 +52,6 @@ window.addEventListener("keydown", function (evt) {
     if (modalForm.classList.contains("modal-show")) {
       evt.preventDefault();
       modalForm.classList.remove("modal-show");
-      modalForm.classList.remove("modal-error");
     }
   }
 });
